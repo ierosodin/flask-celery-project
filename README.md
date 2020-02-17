@@ -6,3 +6,7 @@ sudo systemctl enable redis-server.service
 pip install celery redis
 ```
 
+```
+python app.py
+celery -A tasks worker --concurrency=3 --loglevel=DEBUG
+```
