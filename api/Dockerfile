@@ -18,5 +18,3 @@ EXPOSE 5002
 RUN pip install gunicorn
 
 CMD ["gunicorn", "--bind", "0.0.0.0:5002", "--workers", "3", "app:app"]
-
-ENTRYPOINT celery -A tasks worker --loglevel=info
