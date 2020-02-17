@@ -1,0 +1,5 @@
+celery==4.4.0
+python==3.8.1
+pytz==2019.3
+redis==3.4.1
+
